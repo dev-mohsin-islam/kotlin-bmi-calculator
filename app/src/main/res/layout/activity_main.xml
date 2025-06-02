@@ -1,38 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp">
-
-    <EditText
-        android:id="@+id/weightInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter weight (kg)"
-        android:inputType="numberDecimal" />
-
-    <EditText
-        android:id="@+id/heightInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter height (m)"
-        android:inputType="numberDecimal"
-        android:layout_marginTop="12dp" />
-
-    <Button
-        android:id="@+id/calculateBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate BMI"
-        android:layout_marginTop="16dp" />
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/resultText"
+        android:text="Daily Practice"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bmiButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="18sp"
-        android:layout_marginTop="24dp" />
+        android:text="BMI Calculator" />
+
+    <Button
+        android:id="@+id/lengthButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Length Converter"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
